@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>PAGE TITLE HERE</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link href="/style_sheet.css" rel="stylesheet"/>
+  <article class="full_column">
+
+  </article>
+</head>
+
+<body>
+<div class="wrapper">
+  <% if flash[:login] %>
+      <p style="color: black; font-size: 60px"><%= flash[:login] %></p>
+  <% end %>
+  <article class="one_fourth"></article>
+  <article class="one_half" id="flash_box">
+    <% if flash[:notice] %>
+        <p style="color: green"><%= flash[:notice] %>
+    <% end %>
+  </article>
+  <article class="one_forth"></article>
+</div>
+<%= yield %>
+</body>
+
+</html>

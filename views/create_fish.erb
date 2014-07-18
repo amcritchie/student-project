@@ -1,0 +1,24 @@
+<div class="wrapper">
+<section class="clearfix">
+  <article class="one_fourth"></article>
+  <article class="one_half">
+    <h1>Create A New Fish</h1>
+
+    <form action="/create_fish" method="post" name="create_fish">
+      <fieldset>
+        <legend>Information:</legend>
+        <!--Flash notice-->
+        <% if flash[:fish] %>
+            <p style="color: red"><%= flash[:fish] %></p><br>
+        <% end %>
+        Name <input type="text" name="fishname" id="fishname"><br><br>
+        Wikipedia URL <input type="text" name="wikilink" id="wikilink"><br>
+      </fieldset>
+      <br>
+      <button id="submit_button" type="submit">Create</button>
+
+    </form>
+  </article>
+  <article class="one_fourth"></article>
+</section>
+</div>

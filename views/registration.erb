@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <section class="clearfix">
+    <article class="one_fourth"></article>
+    <article class="one_half">
+      <h1>Register for fish.ly!</h1>
+
+      <form action="/registration" method="post">
+        <fieldset>
+            <legend>Information:</legend>
+            <!--Flash notice-->
+            <% if flash[:registration] %>
+              <p style="color: red"><%= flash[:registration] %></p><br>
+            <% end %>
+            Username <input type="text" name="username"><br><br>
+            Password <input type="password" name="password"><br>
+        </fieldset>
+        <br>
+          <button id="submit_button" type="submit">Register</button>
+
+      </form>
+    </article>
+    <article class="one_fourth"></article>
+  </section>
+</div>

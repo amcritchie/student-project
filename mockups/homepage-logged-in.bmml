@@ -1,0 +1,54 @@
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="1009" measuredH="812" mockupW="964" mockupH="769">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="45" y="43" w="964" h="769" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>User%20Auth%0Ahttp%3A//localhost%3A4567</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="313" y="737" w="429" h="47" measuredW="109" measuredH="37" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>Logout</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="313" y="152" w="429" h="-1" measuredW="280" measuredH="40" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Welcome%2C%20jetaggart</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Title" x="503" y="207" w="-1" h="-1" measuredW="49" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Users</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::DataGrid" x="313" y="236" w="429" h="190" measuredW="132" measuredH="108" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Username%2C%20Actions%0Ahunty%2C%20%5BDelete%5D%28%29%0Aspency%2C%20%5BDelete%5D%28%29%0Atrixie%2C%20%5BDelete%5D%28%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::StickyNote" x="764" y="233" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Clicking%20delete%20just%20removes%20the%20user%20and%20refreshes%20the%20page</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Title" x="496" y="447" w="-1" h="-1" measuredW="62" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>My%20Fish</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::DataGrid" x="313" y="477" w="429" h="190" measuredW="160" measuredH="108" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Name%2C%20Actions%0AWild%20Fur%20Fish%2C%20%5BWikipedia%5D%28%29%0ACrazy%20Eyes%2C%20%5BWikipedia%5D%28%29%0AGreat%20Walker%2C%20%5BWikipedia%5D%28%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Button" x="581" y="675" w="161" h="28" measuredW="94" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>Create%20Fish</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

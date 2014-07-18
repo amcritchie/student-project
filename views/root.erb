@@ -1,0 +1,85 @@
+<!--if not logged in-->
+<body>
+<div class="wrapper">
+  <section class="clearfix">
+    <article class="one_fourth"></article>
+    <article class="one_half">
+      <% if session[:user_id] %>
+          <h2>Users</h2>
+
+          <form class="user_sort" action="/sort" method="post" align="left">
+            <input type="radio" name="order" value="asc" id="asc" select>Ascending<br>
+            <input type="radio" name="order" value="desc" id="desc">Descending<br>
+            <button class="sort_button" type="submit">Sort</button>
+          </form>
+          <br>
+
+          <table class="new_table" border="5">
+            <tr>
+              <th>Users</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <% users.each do |user| %>
+                  <% if user["id"] != session[:user_id] %>
+                      <td>
+                        <a href="/fishes/<%= user["username"] %>"><%= user["username"] %></a>
+                      </td>
+                      <td>
+                        <a href="/delete/<%= user["username"] %>">Delete</a>
+                      </td>
+                  <% end %>
+                  </tr>
+              <% end %>
+              </table>
+          <br><br>
+
+          <h2>My Fish</h2>
+
+          <table class="new_table" border="5">
+            <tr>
+              <th>Name</th>
+              <th>Actions</th>
+            </tr>
+            <tr>
+              <% fishes.each do |fish| %>
+                  <% if fish["user_id"] == session[:user_id] %>
+                      <td><%= fish["name"] %></td>
+                      <td>
+                        <a href="<%= fish["url"] %>">Wikipedia</a>
+                      </td>
+                  <% end %>
+                  </tr>
+              <% end %>
+              </table>
+          <br>
+          <form action="/create_fish" method="get">
+            <button id="create_fish_button" type="submit">Create Fish</button>
+          </form>
+          <br><br>
+
+
+          <form action="/logout" method="post">
+            <button id="submit_button" type="submit">Logout</button>
+          </form>
+
+      <% else %>
+          <form action="/registration" method="get">
+            <button id="registration_button" type="submit">Register</button>
+          </form>
+
+          <h2>OR</h2>
+
+          <form action="/login" method="post">
+            Username: <br> <input class="form_width" type="text" name="username"><br>
+            Password: <br> <input class="form_width" type="password" name="password"><br><br>
+            <button id="login_button" type="submit">Login</button>
+          </form>
+
+      <% end %>
+
+    </article>
+    <article class="one_fourth"></article>
+  </section>
+</div>
+</body>

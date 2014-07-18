@@ -1,0 +1,51 @@
+Id,Title,Labels,Iteration,Iteration Start,Iteration End,Type,Estimate,Current State,Created at,Accepted at,Deadline,Requested By,Description,URL,Owned By
+74180570,"As an anonymous person, I can see the homepage (root path) with a registration button","",1,"Jul 7, 2014","Jul 13, 2014",feature,1,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74180570,
+74180606,"As an anonymous person, I can click the registration button and view a registration form","",1,"Jul 7, 2014","Jul 13, 2014",feature,1,unstarted,"Jun 30, 2014",,,Jeff Taggart,"This form has an input field for my username, password and a submit button that does nothing yet.",https://www.pivotaltracker.com/story/show/74180606,
+74180658,"As an anonymous person, I can fill out the registration form to create an account","",1,"Jul 7, 2014","Jul 13, 2014",feature,2,unstarted,"Jun 30, 2014",,,Jeff Taggart,"When submitting the form, I should see ""Thank you for registering""
+
+This message should go away when I refresh the page.",https://www.pivotaltracker.com/story/show/74180658,
+74180746,"As an anonymous person, when I'm on the homepage, I can click ""Login"", fill in my username and password, and log in","",1,"Jul 7, 2014","Jul 13, 2014",feature,2,unstarted,"Jun 30, 2014",,,Jeff Taggart,"When a user submits the form they should be redirected to the home page and see the text ""Welcome, #{username}""",https://www.pivotaltracker.com/story/show/74180746,
+74180908,"As a logged in user, I no longer see the ""Login"" or ""Registration"" button, but instead ""Logout""","",1,"Jul 7, 2014","Jul 13, 2014",feature,1,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74180908,
+74180946,"As a logged in user, when I click ""Logout"", I am logged out","",1,"Jul 7, 2014","Jul 13, 2014",feature,2,unstarted,"Jun 30, 2014",,,Jeff Taggart,"Clicking log will bring the user back to the homepage. They should see the ""Login"" and ""Register"" buttons. The welcome message is gone.",https://www.pivotaltracker.com/story/show/74180946,
+74180832,"As an anonymous person, If I fill in an empty username OR an empty password OR both, I see a message informing me that I need to fill in that information","",2,"Jul 14, 2014","Jul 20, 2014",feature,3,unstarted,"Jun 30, 2014",,,Jeff Taggart,"""Username is required""
+OR
+""Password is required""
+OR
+""Username and password is required""
+
+is presented above the form
+
+If you're feeling daring. Try using Database Constraints to implement this. You'll have to rescue the exception thrown by the Database class.",https://www.pivotaltracker.com/story/show/74180832,
+74180876,"As a anonymous user, I cannot register with a username that already exists","",2,"Jul 14, 2014","Jul 20, 2014",feature,2,unstarted,"Jun 30, 2014",,,Jeff Taggart,"I see a message informing me that this username is already taken.
+
+Try using a database constraint and rescue the exception thrown by the Database class.
+
+Look up
+
+```
+begin
+  # do stuff
+rescue
+  # something bad happened, do something else
+end
+```
+",https://www.pivotaltracker.com/story/show/74180876,
+74182126,"As a logged in user, I can view a list of users on my homepage","",2,"Jul 14, 2014","Jul 20, 2014",feature,2,unstarted,"Jun 30, 2014",,,Jeff Taggart,"This ONLY shows up for logged in users, User's that are not logged in do not see the list",https://www.pivotaltracker.com/story/show/74182126,
+74182142,"As a logged in user, I don't see myself on the list of users","",2,"Jul 14, 2014","Jul 20, 2014",feature,1,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74182142,
+74623508,"As a logged in user, I can order the users by username","",2,"Jul 14, 2014","Jul 20, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74623508,
+74182158,"As a logged in user, I can delete other users","",3,"Jul 21, 2014","Jul 27, 2014",feature,3,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74182158,
+74182502,"As a logged in User, I can create a fish with a wikipedia page","",3,"Jul 21, 2014","Jul 27, 2014",feature,3,unstarted,"Jun 30, 2014",,,Jeff Taggart,Any logged in user can see all fish on the homepage,https://www.pivotaltracker.com/story/show/74182502,
+74182522,"As a logged in user, I can only view fish created by myself on the homepage","",3,"Jul 21, 2014","Jul 27, 2014",feature,3,unstarted,"Jun 30, 2014",,,Jeff Taggart,A logged in user can no longer see fish created by other users,https://www.pivotaltracker.com/story/show/74182522,
+74180980,Exercise Goal,"",3,"Jul 21, 2014","Jul 27, 2014",release,,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74180980,
+74182600,"As a logged in user, I can click on another user's name and view fish created by them","",4,"Jul 28, 2014","Aug 3, 2014",feature,3,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74182600,
+74623784,"As a logged in user, when I click ""Favorite"" next to another user's fish then I can favorite fish.","",4,"Jul 28, 2014","Aug 3, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,"There is a link next to the fish that reads ""Favorite"", when I've favorited a fish, this link turns to text that states ""Favorited""",https://www.pivotaltracker.com/story/show/74623784,
+74623922,"As a logged in user, when I click ""Favorited"" then I can un-favorite a fish I've favorited","",4,"Jul 28, 2014","Aug 3, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74623922,
+74182618,"As a logged in user, I can delete fish created by myself","",4,"Jul 28, 2014","Aug 3, 2014",feature,2,unstarted,"Jun 30, 2014",,,Jeff Taggart,I cannot delete other user's fish,https://www.pivotaltracker.com/story/show/74182618,
+74623670,"As a logged in user, when I click ""Search Fish"" from the homepage and I fill out a search form and submit I can see fish name's that match the search","",4,"Jul 28, 2014","Aug 3, 2014",feature,3,unstarted,"Jul 8, 2014",,,Jeff Taggart,Look up how to use a wildcard like query in SQL.,https://www.pivotaltracker.com/story/show/74623670,
+74182490,Extended Goal,"",4,"Jul 28, 2014","Aug 3, 2014",release,,unstarted,"Jun 30, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74182490,
+74634244,"As a logged in user, when I view another user's fish and I click ""Add Fish to my Collection"" then the fish is added to my list of fish","",5,"Aug 4, 2014","Aug 10, 2014",feature,3,unstarted,"Jul 8, 2014",,,Jeff Taggart,Don't make a duplicate copy of the fish,https://www.pivotaltracker.com/story/show/74634244,
+74634350,"As a logged in user, when I view another user's fish and I click ""Comment"", fill out a comment form and submit the form then I see my comment beneath the fish on the user's list of fish","",5,"Aug 4, 2014","Aug 10, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74634350,
+74634408,"As a logged in user, when another user comments on my fish, then I see that comment beneath the correct fish on the homepage","",5,"Aug 4, 2014","Aug 10, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74634408,
+74634456,"As a logged in user, when I view another user's comment and I click ""Spam"" then the comment is marked as ""Spam""","",5,"Aug 4, 2014","Aug 10, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,"A ""Spam"" comment shows up in RED",https://www.pivotaltracker.com/story/show/74634456,
+74634508,"As a logged in user, when I'm viewing my home page and I have a comment that's been marked as spam then I see a new section called ""Spam"" that has a list of all of my comments that have been marked as spam","",6,"Aug 11, 2014","Aug 17, 2014",feature,2,unstarted,"Jul 8, 2014",,,Jeff Taggart,"The ""Spam"" section on my homepage ONLY shows up if I have at least one spammy comment.",https://www.pivotaltracker.com/story/show/74634508,
+74634250,Life Goal,"",6,"Aug 11, 2014","Aug 17, 2014",release,,unstarted,"Jul 8, 2014",,,Jeff Taggart,,https://www.pivotaltracker.com/story/show/74634250,
