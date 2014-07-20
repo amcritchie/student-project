@@ -182,6 +182,11 @@ table
     margin: auto;
 }
 
+.register_name{
+    width: 49%;
+    margin: auto;
+}
+
 .new_table th { background-color:darkgrey;color:black; width: 50%; text-align: left;}
 .new_table tr:nth-child(even) td{ background-color:lightgray;color:black; }
 .new_table tr:nth-child(odd) td{ background-color:white;color:black; }
